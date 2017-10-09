@@ -5,6 +5,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing;
 
+/**
+ * @param $request
+ * @return Response
+ */
 function render_template($request)
 {
     extract($request->attributes->all(), EXTR_SKIP);
