@@ -7,7 +7,7 @@
 
 ## About Mphp
 
-Fast, secure and small size php framework.
+Fast, secure and small size php framework based on symfony 4.
 
 ## License
 
