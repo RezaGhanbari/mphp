@@ -1,7 +1,7 @@
 <?php
+require_once __DIR__ . '/init.php';
 
-$input = isset($_GET['name']) ? $_GET['name'] : 'World';
+$input = $request->get('name', 'World');
 
-header('Content-type: text/html; charset=utf-8');
-
-printf('Hello %s', htmlspecialchars($input, ENT_QUOTES, 'utf-8'));
+$response->setContent(sprintf('Hello %s', htmlspecialchars($input, ENT_QUOTES, 'UTF-8')));
+$response->send();
